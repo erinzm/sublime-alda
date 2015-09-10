@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>alda</string>
+	</array>
+	<key>name</key>
+	<string>Alda</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>[~.]|(?&lt;=[a-g\+\-\~])\d+|r\d*</string>
+			<key>name</key>
+			<string>variable.parameter.timing.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=[a-g])[\-\+]+</string>
+			<key>name</key>
+			<string>variable.parameter.pitch-shift.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>o\d+</string>
+			<key>name</key>
+			<string>keyword.operator.octave-set.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[\&lt;\&gt;]</string>
+			<key>name</key>
+			<string>keyword.operator.octave-shift.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\|</string>
+			<key>name</key>
+			<string>comment.character.pipe.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>#.*$</string>
+			<key>name</key>
+			<string>comment.line.number-sign.alda</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(\*</string>
+			<key>end</key>
+			<string>\*\)</string>
+			<key>name</key>
+			<string>comment.block.alda</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.alda</string>
+	<key>uuid</key>
+	<string>8e03bdb0-70f9-4e1f-b998-c69d3821bfa1</string>
+</dict>
+</plist>

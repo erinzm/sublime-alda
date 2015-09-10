@@ -1,0 +1,30 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Alda
+scopeName: source.alda
+fileTypes: [alda]
+uuid: 8e03bdb0-70f9-4e1f-b998-c69d3821bfa1
+
+patterns:
+  - name: variable.parameter.timing.alda
+    match: '[~.]|(?<=[a-g\+\-\~])\d+|r\d*'
+
+  - name: variable.parameter.pitch-shift.alda
+    match: '(?<=[a-g])[\-\+]+'
+
+  - name: keyword.operator.octave-set.alda
+    match: 'o\d+'
+
+  - name: keyword.operator.octave-shift.alda
+    match: '[\<\>]'
+
+  - name: comment.character.pipe.alda
+    match: \|
+
+  - name: comment.line.number-sign.alda
+    match: '#.*$'
+
+  - name: comment.block.alda
+    begin: \(\*
+    end: \*\)
+...
