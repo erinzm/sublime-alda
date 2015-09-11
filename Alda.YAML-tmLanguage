@@ -15,8 +15,17 @@ patterns:
   - name: keyword.operator.octave-set.alda
     match: 'o\d+'
 
+  - name: entity.name.function.sync-marker.alda
+    match: '%[a-zA-Z]{2}[\w\-]*'
+
+  - name: entity.name.tag.sync.alda
+    match: '@[a-zA-Z]{2}[\w\-]*'
+
   - name: keyword.operator.octave-shift.alda
     match: '[\<\>]'
+
+  - name: keyword.operator.subchord.alda
+    match: '/'
 
   - name: comment.character.pipe.alda
     match: \|

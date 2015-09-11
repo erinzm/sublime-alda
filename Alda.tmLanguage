@@ -30,9 +30,27 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>%[a-zA-Z]{2}[\w\-]*</string>
+			<key>name</key>
+			<string>entity.name.function.sync-marker.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>@[a-zA-Z]{2}[\w\-]*</string>
+			<key>name</key>
+			<string>entity.name.tag.sync.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>[\&lt;\&gt;]</string>
 			<key>name</key>
 			<string>keyword.operator.octave-shift.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>/</string>
+			<key>name</key>
+			<string>keyword.operator.subchord.alda</string>
 		</dict>
 		<dict>
 			<key>match</key>
