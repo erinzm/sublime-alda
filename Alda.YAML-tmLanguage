@@ -6,6 +6,17 @@ fileTypes: [alda]
 uuid: 8e03bdb0-70f9-4e1f-b998-c69d3821bfa1
 
 patterns:
+  - name: entity.name.function.part.alda
+    match: '^([a-zA-Z]{2}[\w-]*)(?:\s(\"[a-z]{2}[\w-]*\"))?:'
+    captures:
+      '1':
+        name: entity.name.type.instrument.alda
+      '2':
+        name: string.quoted.double.quickname.alda
+
+  - name: entity.name.function.voice.alda
+    match: '^[Vv][0-9]+:'
+
   - name: variable.parameter.timing.alda
     match: '[~.]|(?<=[a-g\+\-\~])\d+|r\d*'
 
