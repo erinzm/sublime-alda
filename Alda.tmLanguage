@@ -11,6 +11,31 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.instrument.alda</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.quickname.alda</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^([a-zA-Z]{2}[\w-]*)(?:\s(\"[a-z]{2}[\w-]*\"))?:</string>
+			<key>name</key>
+			<string>entity.name.function.part.alda</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^[Vv][0-9]+:</string>
+			<key>name</key>
+			<string>entity.name.function.voice.alda</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>[~.]|(?&lt;=[a-g\+\-\~])\d+|r\d*</string>
 			<key>name</key>
@@ -32,7 +57,7 @@
 			<key>match</key>
 			<string>%[a-zA-Z]{2}[\w\-]*</string>
 			<key>name</key>
-			<string>entity.name.function.sync-marker.alda</string>
+			<string>entity.name.tag.sync-marker.alda</string>
 		</dict>
 		<dict>
 			<key>match</key>
