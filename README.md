@@ -1,4 +1,4 @@
-# A Sublime Text syntax plugin for Alda
+# A Sublime Text syntax plugin for [Alda](https://github.com/alda-lang/alda)
 
 ![A syntax-highlighted piece in Alda](http://i.imgur.com/BJk1Thd.png)
 
