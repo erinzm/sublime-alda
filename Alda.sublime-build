@@ -1,0 +1,4 @@
+{
+	"cmd": ["alda", "play","--file", "\"${file}\""],
+	"selector" : "source.alda"
+}
